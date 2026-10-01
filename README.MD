@@ -29,13 +29,38 @@ Skill AI untuk belajar bahasa Jepang secara serius. AI akan berperan sebagai **s
 
    ```
    Silakan baca dan pahami SKILL.md yang sudah saya upload. Pastikan role dan
-   karakter kamu persis seperti di SKILL.md saya. Jika menggunakan kanji,
-   sertakan furigana.
+   karakter kamu persis seperti di SKILL.md saya.
    ```
 
-5. **Ketik pola kalimat Jepang yang ingin kamu pelajari**, dan sensei langsung mulai.
+5. **Sensei otomatis menampilkan menu pembuka.** Pilih menu (pola kalimat atau kotoba), lalu jawab beberapa pertanyaan singkat: kosakata khusus, furigana, dan jumlah soal. Setelah itu sesi dimulai.
 
 > Tips: sebutkan level di awal supaya materi pas. Contoh: `N4 ～てしまう`. Kalau tidak menyebut level, sensei akan menebak dari polanya dan memberi tahu asumsinya; kamu tinggal koreksi.
+
+---
+
+## Alur sesi: menu & pertanyaan awal
+
+Sebelum mengajar, sensei menanyakan kebutuhanmu **satu pertanyaan per giliran**, seperti konsultasi dua arah. Setelah kamu mengirim prompt pembuka, kamu akan melihat menu seperti ini:
+
+```
+1. Pola kalimat apa yang ingin kamu dalami hari ini?
+2. Apakah kamu ingin latihan kotoba hari ini? (ketik 2, lalu paste list kotoba kamu)
+3. Tes level
+4. Review kelemahan sesi sebelumnya
+5. Mode khusus: gas drill / JLPT mode / mode Irodori
+```
+
+**Jalur 1: pola kalimat**
+
+1. Kamu ketik polanya (boleh sebut level, mis. `N4 ～てしまう`).
+2. Sensei bertanya: *"Apakah kamu memiliki list kosakata khusus yang bisa saya gunakan?"* Kalau kamu paste list, kata-kata itu dipakai di contoh dan soal. Kalau tidak, ketik `skip`.
+3. Sensei bertanya: *"Apakah di setiap penjelasan dan latihan, kanji ditampilkan dengan furigana?"* Pilihannya: semua kanji, tidak, atau hanya kanji sulit.
+4. Sensei bertanya: *"Berapa butir soal yang kamu inginkan di setiap sesi?"*
+5. Sensei menampilkan ringkasan pilihanmu, lalu langsung mulai dengan diagnosis singkat dan pengajaran.
+
+**Jalur 2: kotoba.** Ketik `2` dan paste list kotoba atau kanji. Sensei lalu menanyakan furigana dan jumlah soal, kemudian melatih kata-katamu dengan berbagai jenis soal.
+
+**Jalur cepat.** Kamu bisa menjawab sekaligus, mis. `N4 ～てしまう, skip, furigana ya, 10 soal`, dan pertanyaan yang sudah terjawab dilewati. Ketik `langsung aja` untuk memakai pengaturan default (furigana semua kanji, 10 soal). Pilihan furigana dan jumlah soal berlaku sepanjang sesi dan bisa diubah kapan saja (mis. `matikan furigana`, `jadi 20 soal`).
 
 ---
 
@@ -43,7 +68,7 @@ Skill AI untuk belajar bahasa Jepang secara serius. AI akan berperan sebagai **s
 
 | Yang kamu ketik | Yang terjadi |
 |---|---|
-| `～ために` | Sensei menebak level, diagnosis singkat, lalu mengajar dan mendrill |
+| `～ために` | Sensei menebak level, menanyakan kosakata, furigana, dan jumlah soal, lalu diagnosis, mengajar, dan mendrill |
 | `N5 ～ています` | Belajar pola itu dengan kosakata dan kalimat level N5 |
 | `N2 ～わけにはいかない` | Penjelasan nuansa tingkat lanjut + pembedaan dengan pola mirip |
 | `N3 ～ことになっている` + `会社, ルール, 毎日, 禁止する` | Contoh dan soal wajib memakai 4 kosakata itu |
@@ -54,6 +79,7 @@ Skill AI untuk belajar bahasa Jepang secara serius. AI akan berperan sebagai **s
 
 | Perintah | Fungsi |
 |---|---|
+| `menu` | Tampilkan menu pembuka kapan saja |
 | `tes level` | Tes penempatan singkat untuk menentukan levelmu |
 | `gas drill` / `uji gue` / `habisin gue` / `full drill` | Mode drill intensif ("Sensei Galak"): langsung soal, campur grammar, berjalan sampai kelemahanmu kelihatan |
 | `JLPT mode` | Simulasi ujian: tanpa hint, pembahasan setelah semua selesai |
@@ -77,7 +103,7 @@ Skill AI untuk belajar bahasa Jepang secara serius. AI akan berperan sebagai **s
 
 ## Menyimpan progres antar sesi
 
-Kebanyakan AI chat **tidak mengingat** sesi sebelumnya. Sensei akan memberi **ringkasan progres** di akhir sesi. Caranya:
+Kebanyakan AI chat **tidak mengingat** sesi sebelumnya. Sensei akan memberi **ringkasan progres** di akhir sesi (termasuk level, preferensi furigana, dan jumlah soal). Caranya:
 
 1. **Copy ringkasan** itu di akhir sesi.
 2. Di sesi baru, upload file skill lagi, paste prompt langkah 4, lalu **paste ringkasan tadi**.
