@@ -1,124 +1,325 @@
-# Japanese Private Sensei 🇯🇵
+# Japanese Private Sensei
 
-Skill AI untuk belajar bahasa Jepang secara serius. AI akan berperan sebagai **sensei pribadi** yang mengajar, mendrill, menguji, mengoreksi, dan melacak kelemahanmu — bukan sekadar menjelaskan grammar lalu selesai.
+> Sistem belajar Bahasa Jepang yang menggabungkan pengajaran, latihan,
+> koreksi, deteksi kelemahan, dan review dalam satu rangkaian belajar
+> yang saling terhubung.
 
-**Level yang didukung:** JLPT **N5 · N4 · N3 · N2 · N1** dan **Irodori** (A1–B1).
-**Bahasa penjelasan:** Indonesia. **Kanji:** selalu disertai furigana.
+## Apa yang membedakan Japanese Private Sensei dengan prompting biasa?
 
----
+Kalau **prompting biasa**, kita biasanya memberikan perintah kepada AI,
+kemudian AI memberikan jawaban.
 
-## Isi paket
+Contohnya:
 
-| File | Fungsi |
-|---|---|
-| `SKILL.md` | Otak utama: peran sensei, deteksi level, mode belajar, aturan feedback |
-| `pedagogy.md` | Cara mengajar & membedakan grammar yang mirip |
-| `drill-engine.md` | Jenis latihan, level kesulitan adaptif, mode drill & simulasi |
-| `error-taxonomy.md` | Klasifikasi & pelacakan kesalahanmu (weakness detection) |
-| `mastery-rubric.md` | Status penguasaan (NEW → MASTERED), scoring, jadwal review |
-| `examples.md` | Contoh gaya penjelasan dan soal |
+> "Jelaskan perbedaan ～より dan ～ほうが dengan bahasa sederhana."
 
----
+AI akan memberikan penjelasan sesuai perintah tersebut.
 
-## Cara pakai
+Namun, prosesnya biasanya berhenti pada jawaban tersebut. AI belum tentu
+mengetahui apakah kita benar-benar sudah memahami materi, bagian mana
+yang masih sering salah, atau materi apa yang perlu dipelajari kembali.
 
-1. **Download semua file**: `SKILL.md`, `pedagogy.md`, `drill-engine.md`, `error-taxonomy.md`, `mastery-rubric.md`, dan `examples.md`.
-2. **Buka AI favoritmu**, misalnya Claude, ChatGPT, atau Gemini.
-3. **Upload semua file** yang sudah kamu download (enam file sekaligus).
-4. **Paste prompt berikut:**
+**Japanese Private Sensei menggunakan konsep yang berbeda.**
 
-   ```
-   Silakan baca dan pahami SKILL.md yang sudah saya upload. Pastikan role dan
-   karakter kamu persis seperti di SKILL.md saya.
-   ```
+Sistem ini menghubungkan beberapa proses belajar menjadi satu rangkaian:
 
-5. **Sensei otomatis menampilkan menu pembuka.** Pilih menu (pola kalimat atau kotoba), lalu jawab beberapa pertanyaan singkat: kosakata khusus, furigana, dan jumlah soal. Setelah itu sesi dimulai.
+**Belajar → Latihan → Koreksi → Deteksi Kesalahan → Review →
+Penguasaan**
 
-> Tips: sebutkan level di awal supaya materi pas. Contoh: `N4 ～てしまう`. Kalau tidak menyebut level, sensei akan menebak dari polanya dan memberi tahu asumsinya; kamu tinggal koreksi.
+Jadi, Sensei tidak hanya berperan sebagai AI yang menjelaskan materi,
+tetapi juga membantu **melatih, menguji, mengoreksi, dan memantau
+perkembangan belajar.**
 
----
+------------------------------------------------------------------------
 
-## Alur sesi: menu & pertanyaan awal
+## Bagaimana cara kerjanya?
 
-Sebelum mengajar, sensei menanyakan kebutuhanmu **satu pertanyaan per giliran**, seperti konsultasi dua arah. Setelah kamu mengirim prompt pembuka, kamu akan melihat menu seperti ini:
+Bayangkan kita sedang belajar grammar Bahasa Jepang.
 
+1.  **Sensei menjelaskan materi**
+    -   Materi dijelaskan dengan cara yang mudah dipahami.
+    -   Jika ada grammar yang mirip, perbedaannya dijelaskan secara
+        kontekstual.
+2.  **Sensei memberikan latihan**
+    -   Pengguna mengerjakan soal sesuai materi yang sedang dipelajari.
+    -   Tingkat latihan dapat disesuaikan dengan kemampuan.
+3.  **Jawaban diperiksa**
+    -   Jawaban benar dan salah dicatat.
+    -   Kesalahan tidak hanya dianggap sebagai "salah", tetapi digunakan
+        sebagai informasi untuk melihat pola kesalahan.
+4.  **Kelemahan mulai terlihat**
+    -   Misalnya pengguna sering salah membedakan ～より dan ～ほうが.
+    -   Sistem dapat mengenali bahwa bagian tersebut masih perlu
+        diperkuat.
+5.  **Latihan berikutnya diarahkan**
+    -   Pengguna tidak harus mengulang semua materi dari awal.
+    -   Latihan dapat lebih difokuskan pada bagian yang masih lemah.
+6.  **Penguasaan diperbarui**
+    -   Setelah beberapa latihan, sistem dapat membantu melihat apakah
+        materi masih perlu di-review atau sudah mulai dikuasai.
+
+Dengan begitu, proses belajar menjadi lebih terarah.
+
+------------------------------------------------------------------------
+
+## Contoh sederhana
+
+Misalnya kamu sedang belajar:
+
+**～より dan ～ほうが**
+
+Setelah mendapatkan penjelasan, kamu mengerjakan 10 soal.
+
+Hasilnya:
+
+-   6 soal benar
+-   4 soal salah
+-   Sebagian besar kesalahan terjadi saat menggunakan **～ほうが**
+
+Daripada hanya mengatakan:
+
+> "Jawabanmu salah."
+
+Japanese Private Sensei menggunakan kesalahan tersebut sebagai informasi
+belajar.
+
+Latihan berikutnya dapat diarahkan kembali pada penggunaan **～ほうが**,
+sehingga kamu memiliki kesempatan untuk memperbaiki bagian yang memang
+masih belum dikuasai.
+
+Jadi, alurnya bukan:
+
+> **Tanya → Jawab → Selesai**
+
+Tetapi:
+
+> **Belajar → Latihan → Dikoreksi → Kesalahan dianalisis → Latihan
+> kembali → Cek penguasaan**
+
+------------------------------------------------------------------------
+
+## Struktur Sistem
+
+Japanese Private Sensei menggunakan beberapa file yang memiliki fungsi
+berbeda, tetapi saling berhubungan.
+
+  -----------------------------------------------------------------------
+  File                                Fungsi
+  ----------------------------------- -----------------------------------
+  `SKILL.md`                          Mengatur peran Sensei, cara membaca
+                                      level pengguna, mode belajar, dan
+                                      aturan feedback
+
+  `pedagogy.md`                       Mengatur cara mengajar dan
+                                      membedakan grammar yang mirip
+
+  `drill-engine.md`                   Mengatur jenis latihan, tingkat
+                                      kesulitan, mode drill, dan simulasi
+
+  `error-taxonomy.md`                 Mengklasifikasikan dan melacak
+                                      kesalahan pengguna
+
+  `mastery-rubric.md`                 Menentukan status penguasaan
+                                      materi, dari **NEW** sampai
+                                      **MASTERED**
+
+  `examples.md`                       Menyediakan contoh gaya penjelasan
+                                      dan contoh soal
+  -----------------------------------------------------------------------
+
+### Hubungan antarbagian
+
+File-file tersebut tidak dimaksudkan untuk bekerja secara terpisah.
+
+Secara sederhana, hubungannya seperti ini:
+
+``` text
+                 SKILL.md
+                    │
+                    ▼
+             Cara Sensei mengajar
+                    │
+          ┌─────────┴─────────┐
+          ▼                   ▼
+    pedagogy.md          drill-engine.md
+          │                   │
+          │              Latihan & soal
+          │                   │
+          └─────────┬─────────┘
+                    ▼
+              Jawaban pengguna
+                    │
+                    ▼
+           error-taxonomy.md
+                    │
+              Deteksi kesalahan
+                    │
+                    ▼
+            mastery-rubric.md
+                    │
+          Status penguasaan materi
+                    │
+                    ▼
+             Review berikutnya
 ```
-1. Pola kalimat apa yang ingin kamu dalami hari ini?
-2. Apakah kamu ingin latihan kotoba hari ini? (ketik 2, lalu paste list kotoba kamu)
-3. Tes level
-4. Review kelemahan sesi sebelumnya
-5. Mode khusus: gas drill / JLPT mode / mode Irodori
+
+------------------------------------------------------------------------
+
+## Apa fungsi masing-masing file?
+
+### `SKILL.md`
+
+Ini bisa dianggap sebagai **otak utama Sensei**.
+
+File ini menentukan bagaimana Sensei harus berperan dalam proses
+belajar, misalnya:
+
+-   bagaimana menjelaskan materi;
+-   bagaimana membaca level pengguna;
+-   bagaimana memberikan feedback;
+-   bagaimana menjalankan mode belajar;
+-   bagaimana menghubungkan proses belajar dengan bagian sistem lainnya.
+
+------------------------------------------------------------------------
+
+### `pedagogy.md`
+
+Bagian ini mengatur **cara mengajar**.
+
+Ini penting terutama ketika ada grammar yang terlihat mirip.
+
+Contohnya:
+
+-   ～より
+-   ～ほうが
+-   ～が好き
+-   ～が上手
+-   dan grammar lain yang sering membingungkan pemula.
+
+Tujuannya bukan hanya memberikan definisi, tetapi membantu pengguna
+memahami **kapan dan bagaimana grammar tersebut digunakan.**
+
+------------------------------------------------------------------------
+
+### `drill-engine.md`
+
+Bagian ini mengatur **latihan**.
+
+Misalnya:
+
+-   jenis soal;
+-   tingkat kesulitan;
+-   latihan bertahap;
+-   mode drill;
+-   simulasi.
+
+Dengan demikian, pengguna tidak hanya membaca materi, tetapi juga
+langsung menggunakannya melalui latihan.
+
+------------------------------------------------------------------------
+
+### `error-taxonomy.md`
+
+Bagian ini berfungsi untuk **membaca kesalahan pengguna**.
+
+Contohnya, pengguna mungkin salah karena:
+
+-   memilih grammar yang tidak tepat;
+-   salah memahami arti;
+-   salah menggunakan bentuk kalimat;
+-   atau masih tertukar dengan grammar lain.
+
+Kesalahan tersebut dapat dikelompokkan sehingga kita tidak hanya
+mengetahui bahwa pengguna "salah", tetapi juga **bagian mana yang perlu
+diperbaiki.**
+
+------------------------------------------------------------------------
+
+### `mastery-rubric.md`
+
+Bagian ini digunakan untuk melihat **tingkat penguasaan materi**.
+
+Contohnya:
+
+``` text
+NEW → LEARNING → REVIEW → MASTERED
 ```
 
-**Jalur 1: pola kalimat**
+Artinya, materi tidak dianggap langsung "selesai" hanya karena pengguna
+sudah membaca penjelasannya.
 
-1. Kamu ketik polanya (boleh sebut level, mis. `N4 ～てしまう`).
-2. Sensei bertanya: *"Apakah kamu memiliki list kosakata khusus yang bisa saya gunakan?"* Kalau kamu paste list, kata-kata itu dipakai di contoh dan soal. Kalau tidak, ketik `skip`.
-3. Sensei bertanya: *"Apakah di setiap penjelasan dan latihan, kanji ditampilkan dengan furigana?"* Pilihannya: semua kanji, tidak, atau hanya kanji sulit.
-4. Sensei bertanya: *"Berapa butir soal yang kamu inginkan di setiap sesi?"*
-5. Sensei menampilkan ringkasan pilihanmu, lalu langsung mulai dengan diagnosis singkat dan pengajaran.
+Penguasaan dilihat dari proses latihan dan hasil yang diperoleh.
 
-**Jalur 2: kotoba.** Ketik `2` dan paste list kotoba atau kanji. Sensei lalu menanyakan furigana dan jumlah soal, kemudian melatih kata-katamu dengan berbagai jenis soal.
+------------------------------------------------------------------------
 
-**Jalur cepat.** Kamu bisa menjawab sekaligus, mis. `N4 ～てしまう, skip, furigana ya, 10 soal`, dan pertanyaan yang sudah terjawab dilewati. Ketik `langsung aja` untuk memakai pengaturan default (furigana semua kanji, 10 soal). Pilihan furigana dan jumlah soal berlaku sepanjang sesi dan bisa diubah kapan saja (mis. `matikan furigana`, `jadi 20 soal`).
+### `examples.md`
 
----
+File ini berisi **contoh gaya penjelasan dan contoh soal**.
 
-## Contoh input
+Tujuannya agar gaya Sensei tetap konsisten ketika menjelaskan materi
+atau membuat latihan.
 
-| Yang kamu ketik | Yang terjadi |
-|---|---|
-| `～ために` | Sensei menebak level, menanyakan kosakata, furigana, dan jumlah soal, lalu diagnosis, mengajar, dan mendrill |
-| `N5 ～ています` | Belajar pola itu dengan kosakata dan kalimat level N5 |
-| `N2 ～わけにはいかない` | Penjelasan nuansa tingkat lanjut + pembedaan dengan pola mirip |
-| `N3 ～ことになっている` + `会社, ルール, 毎日, 禁止する` | Contoh dan soal wajib memakai 4 kosakata itu |
-| `Irodori A2 ～てもいいですか` | Belajar lewat situasi nyata, dialog, dan role-play |
-| `saya masih bingung ～たら dan ～なら` | Langsung ke pembedaan kontras + drill A vs B |
+------------------------------------------------------------------------
 
-## Perintah sesi
+## Perbedaan sederhananya
 
-| Perintah | Fungsi |
-|---|---|
-| `menu` | Tampilkan menu pembuka kapan saja |
-| `tes level` | Tes penempatan singkat untuk menentukan levelmu |
-| `gas drill` / `uji gue` / `habisin gue` / `full drill` | Mode drill intensif ("Sensei Galak"): langsung soal, campur grammar, berjalan sampai kelemahanmu kelihatan |
-| `JLPT mode` | Simulasi ujian: tanpa hint, pembahasan setelah semua selesai |
-| `mode Irodori` / `role-play` | Latihan komunikatif berbasis situasi dan dialog |
-| `review grammar kemarin` | Review pola yang berstatus lemah |
-| `ganti level ke N3` | Pindah level; data kelemahan lama tetap dibawa |
-| `kasih latihan N4` | Latihan sesuai level |
+  -----------------------------------------------------------------------
+  Prompting biasa                     Japanese Private Sensei
+  ----------------------------------- -----------------------------------
+  Memberikan perintah ke AI           Mengikuti proses belajar
 
----
+  Fokus pada jawaban                  Fokus pada perkembangan pengguna
 
-## Cara kerja singkat
+  Penjelasan selesai → selesai        Penjelasan → latihan → koreksi →
+                                      review
 
-1. **Diagnosis**: beberapa soal untuk mengecek posisimu, tanpa kunci jawaban dulu.
-2. **Teaching**: arti inti, nuansa, pola pembentukan, cara berpikir, dan contoh dengan furigana.
-3. **Pembedaan grammar mirip**: dijelaskan lewat kalimat kontras, bukan sekadar "konteksnya beda".
-4. **Latihan bertahap**: pilihan ganda, cloze, menyusun kalimat, transformasi, produksi bebas, bacaan atau dialog.
-5. **Koreksi detail**: setiap jawaban salah dijelaskan kenapa salah dan kenapa pilihanmu terlihat masuk akal.
-6. **Status penguasaan**: `NEW → LEARNING → UNSTABLE → PRACTICED → MASTERED`. Status MASTERED hanya diberikan kalau kamu terbukti bisa memakai pola itu secara nyata, bukan hanya karena beberapa jawaban benar.
+  Kesalahan bisa berhenti pada        Kesalahan digunakan sebagai
+  feedback                            informasi belajar
 
----
+  Tidak harus memiliki riwayat        Memiliki konsep penguasaan materi
+  penguasaan                          
 
-## Menyimpan progres antar sesi
+  Setiap prompt dapat berdiri sendiri Bagian-bagian sistem saling
+                                      terhubung
+  -----------------------------------------------------------------------
 
-Kebanyakan AI chat **tidak mengingat** sesi sebelumnya. Sensei akan memberi **ringkasan progres** di akhir sesi (termasuk level, preferensi furigana, dan jumlah soal). Caranya:
+------------------------------------------------------------------------
 
-1. **Copy ringkasan** itu di akhir sesi.
-2. Di sesi baru, upload file skill lagi, paste prompt langkah 4, lalu **paste ringkasan tadi**.
-3. Sensei melanjutkan dari status dan kelemahanmu sebelumnya.
+## Inti Konsep
 
-Kalau kamu memakai tool yang bisa menyimpan file (mis. Claude Code), progres bisa disimpan otomatis di `progress-log.md`.
+Japanese Private Sensei bukan sekadar:
 
----
+> **"AI yang bisa menjelaskan Bahasa Jepang."**
 
-## Catatan
+Konsep utamanya adalah:
 
-- **Hasil di ChatGPT dan Gemini bisa sedikit berbeda** dari Claude. Jika AI mulai "keluar karakter" (terlalu banyak basa-basi, tidak memberi drill), paste ulang prompt langkah 4.
-- Sensei tidak akan mengarang aturan grammar. Kalau suatu pola ambigu atau pengelompokan levelnya berbeda antar buku, dia akan bilang terus terang. Untuk hal penting, cek ulang dengan kamus atau buku resmi.
-- Semua soal, contoh, dan bacaan dibuat **original**; isi buku pelajaran tidak disalin.
-- Pengelompokan level pola (N5–N1) bisa berbeda antar sumber. Anggap level dari sensei sebagai acuan praktis, bukan daftar resmi ujian.
-- Beberapa file pendukung masih memakai N3 sebagai contoh gaya. `SKILL.md` sudah mengatur agar AI menyesuaikannya dengan levelmu.
+> **"AI yang membantu menjalankan proses belajar Bahasa Jepang secara
+> berkelanjutan."**
 
-Selamat belajar. がんばってください！
+Dengan menggabungkan **pengajaran, latihan, koreksi, deteksi kelemahan,
+dan review**, sistem ini dirancang agar proses belajar tidak berhenti
+pada satu jawaban.
+
+### Singkatnya
+
+``` text
+AI biasa:
+Pertanyaan → Jawaban
+
+Japanese Private Sensei:
+Belajar
+   ↓
+Latihan
+   ↓
+Koreksi
+   ↓
+Deteksi kelemahan
+   ↓
+Latihan kembali
+   ↓
+Review
+   ↓
+Penguasaan
+```
+
+Itulah gagasan utama di balik **Japanese Private Sensei**.
