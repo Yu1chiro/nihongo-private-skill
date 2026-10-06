@@ -22,36 +22,52 @@ Prinsip di bawah ini **terinspirasi oleh pendekatan** tiga jenis materi belajar 
 - Latihan harus menguji *pemilihan pola berdasarkan konteks*, bukan cuma hafalan bentuk.
 - Level soal naik dari pengenalan → penggunaan → analisis bacaan.
 
-## Format penjelasan grammar baru
+## Format penjelasan grammar baru — "Klik 13 Tahun"
 
-Gunakan struktur ini persis (boleh sedikit disesuaikan panjangnya, tapi urutan dan isinya tetap):
+Tujuan: murid langsung "klik". Bayangkan menjelaskan ke anak 13 tahun yang belum pernah belajar grammar. Urutan dan isinya tetap seperti di bawah (panjang boleh disesuaikan level):
 
 ```
-### Grammar
-～XXXX
+### Situasi
+[1–2 kalimat kejadian sehari-hari yang membutuhkan pola ini]
 
-### Arti inti
-[1-2 kalimat Bahasa Indonesia, langsung ke inti, tanpa jargon]
+### Inti (bahasa bayi)
+[1 kalimat. Tanpa jargon]
 
-### Nuansa
-[Kapan dipakai secara alami, rasa formalitas, siapa yang biasa memakainya,
-apakah terkesan objektif/subjektif, dsb — hal yang tidak tertangkap dari
-terjemahan literal saja]
+### Analogi
+[Perumpamaan sehari-hari orang Indonesia + bagian mana yang cocok dengan pola]
 
-### Pola
-[Struktur pembentukan eksplisit, mis:
-Verb (bentuk kamus) + ように
-Verb (bentuk nai) + ように
-Noun + の + ように   ← jelaskan variasi bentuknya, bukan cuma satu baris]
-
-### Cara berpikir
-[Heuristik singkat: "kalau kalimatnya tentang X dan penutur ingin Y,
-biasanya pola ini yang dipilih dibanding pola serupa lainnya"]
+### Rumus
+[Maksimal 3 baris, potongan kotak: [kata kerja] + pola + [kelanjutan], tiap potongan dijelaskan awam]
 
 ### Contoh
-[2-4 kalimat Jepang natural level N3, dengan furigana untuk kanji yang
-berpotensi sulit dibaca murid pemula N3, plus terjemahan Indonesia singkat]
+[2–4 kalimat Jepang natural sesuai level, furigana sesuai preferensi, arti Indonesia,
+plus 1 baris "kenapa pas di sini"]
+
+### Jebakan
+[1–2 kesalahan umum pelajar Indonesia: versi salah vs benar]
+
+### Pengait ingatan
+[1 trik menempel: jembatan bunyi, gambar mental, cerita mini]
+
+### Cek Klik
+[2 soal mikro + teach-back "jelaskan ke adikmu"]
 ```
+
+### Aturan bahasa
+- Kalimat pendek, satu ide per blok. Kata awam menang atas kata ilmiah.
+- Istilah teknis hanya jika perlu, dan **diterjemahkan di tempat** ("bentuk kamus = kata kerja dasar yang ada di kamus").
+- Tes cepat sebelum mengirim: *apakah anak 13 tahun bisa mengulang intinya dengan kata-katanya sendiri?* Kalau tidak, sederhanakan.
+- Satu analogi utama. Kalau tidak klik, ganti analogi (maksimal 3 percobaan, makin pendek).
+
+### Syarat analogi yang baik
+1. Dari kehidupan sehari-hari (warung, ojek online, WhatsApp, alarm, hujan dan payung, antre, nasi goreng, dst.).
+2. **Memetakan perbedaan penting**, bukan sekadar lucu. Kalau polanya punya pasangan mirip, analogi harus membuat keduanya tidak tertukar.
+3. Tidak menyesatkan: setelah analogi, selalu sebut batasnya ("tapi ini cuma perumpamaan, aturan aslinya: …") kalau ada bagian yang tidak cocok.
+4. Tidak mengarang aturan grammar demi cocok dengan analogi.
+
+### Contoh buruk vs baik
+- Buruk: "～ように menyatakan tujuan atau harapan terhadap hal yang tidak sepenuhnya dapat dikendalikan secara langsung oleh subjek."
+- Baik: "～ように itu kayak pasang alarm: kamu siapkan sesuatu supaya hasilnya *jadi* begitu, tapi hasilnya sendiri bukan kamu yang langsung kerjakan."
 
 Contoh konkret pengisian format ini ada di `examples.md` §1.
 
@@ -71,6 +87,9 @@ Jangan pernah menutup pembedaan dengan kalimat generik seperti "keduanya beda ko
 
 ### Kesalahan umum
 [Kesalahan tipikal pelajar Indonesia saat menukar dua pola ini]
+
+### Analogi pemisah
+[1 analogi sehari-hari yang membuat kedua pola tidak tertukar: "A itu seperti …, B itu seperti …"]
 
 ### Contoh kontras berpasangan
 Kalimat A (pakai pola 1): ...

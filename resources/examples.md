@@ -2,32 +2,41 @@
 
 Semua contoh di file ini **original**, dibuat khusus untuk skill ini — bukan kutipan dari buku manapun. Gunakan sebagai acuan gaya/kedalaman, bukan untuk disalin persis ke setiap sesi (variasikan supaya tidak terasa template).
 
-## 1. Contoh Teaching terisi — ～ように
+## 1. Contoh Teaching terisi — ～ように (gaya "Klik 13 Tahun")
 
-### Grammar
-～ように
+### Situasi
+Besok kamu harus bangun jam 5 pagi. Malam ini kamu pasang alarm.
 
-### Arti inti
-Menyatakan tujuan atau harapan terhadap sesuatu yang **tidak sepenuhnya bisa dikontrol langsung** oleh penutur — sering dipakai untuk hasil, kemampuan, atau kondisi yang diusahakan tercapai.
+### Inti (bahasa bayi)
+～ように = "Aku siapkan sesuatu, supaya hasilnya *jadi* begini."
 
-### Nuansa
-Dipakai saat tujuannya sifatnya "semoga tercapai" bukan "aku sengaja lakukan demi itu" — cocok untuk verb yang menyatakan kemampuan, perubahan kondisi, atau hal yang bergantung pada usaha bertahap (忘れないように, 分かるように). Terasa lebih pasif/berharap dibanding ～ために.
+### Analogi
+Pasang alarm. Kamu tidak bisa langsung "memaksa" dirimu bangun, kamu cuma menyiapkan kondisi dan berharap bangunnya terjadi. Itu ～ように. Beda dengan ～ために: kamu pegang setir ojek motormu sendiri, tujuan kamu yang pilih, tindakanmu langsung. (Ini cuma perumpamaan; patokan aslinya ada di Jebakan di bawah.)
 
-### Pola
-- Verb bentuk kamus + ように (untuk harapan positif/netral)
-- Verb bentuk nai + ように (untuk harapan menghindari sesuatu)
-- Umumnya TIDAK dipakai dengan verb kehendak murni orang pertama (愛wa dipakai ～ために untuk itu)
-
-### Cara berpikir
-Tanyakan: "Apakah hasil ini benar-benar di bawah kendali penuh saya, atau lebih ke arah 'semoga begini jadinya'?" Kalau jawabannya "semoga/berusaha supaya begini" → ～ように. Kalau jawabannya "saya lakukan X demi tujuan Y yang saya kejar sendiri" → biasanya ～ために.
+### Rumus
+[kata kerja bentuk kamus / bentuk ない / bentuk bisa] + ように + [usaha yang kamu lakukan]
+- Kata kerja kamus = kata kerja dasar yang ada di kamus (行く, 食べる).
+- Bentuk ない = "tidak" (忘れない).
+- Bentuk bisa = "bisa melakukan" (話せる).
 
 ### Contoh
-1. 忘（わす）れないように、メモを書いておきます。
-   (Supaya tidak lupa, saya menulis catatan dulu.)
-2. 毎日（まいにち）練習（れんしゅう）するように、先生（せんせい）に言（い）われました。
-   (Saya disuruh guru untuk berlatih setiap hari.)
+1. 忘（わす）れないように、メモを書（か）いておきます。
+   (Supaya tidak lupa, saya tulis catatan dulu.) — "tidak lupa" itu hasil yang diharapkan, bukan aksi langsung.
+2. 日本語（にほんご）が話（はな）せるように、毎日（まいにち）練習（れんしゅう）しています。
+   (Supaya bisa bicara bahasa Jepang, saya latihan tiap hari.) — "bisa" itu kemampuan yang tumbuh pelan-pelan.
 3. 早（はや）く元気（げんき）になるように、しっかり休（やす）んでください。
-   (Supaya cepat sembuh, istirahatlah dengan baik.)
+   (Supaya cepat sembuh, istirahatlah yang cukup.) — sembuh itu "jadi", bukan tombol yang bisa kamu tekan.
+
+### Jebakan
+Dalam bahasa Indonesia keduanya "supaya", jadi pelajar sering menulis 話せるために. Itu terdengar janggal: kata kerja "bisa" jangan dipasangkan dengan ために, pakai ように.
+
+### Pengait ingatan
+**Yō-ni = "Yo, nih… semoga ya!"** Kalau kalimatmu bernada "semoga jadi begini", pakai ように.
+
+### Cek Klik
+1. Pilih yang natural: (a) 合格できるように勉強する (b) 合格できるために勉強する
+2. Kenapa jawabanmu natural?
+3. Jelaskan ke adikmu dalam 1–2 kalimat: bedanya ように dan ために.
 
 ## 2. Contoh pembedaan kontras terisi — ～ように vs ～ために
 
@@ -117,3 +126,64 @@ Respon sensei (potongan, langsung ke soal tanpa basa-basi):
 | `saya masih bingung ～たら dan ～なら` | Langsung ke pembedaan kontras (format di `pedagogy.md`), lalu drill kontras A vs B |
 | `review grammar yang kemarin` | Ambil status `UNSTABLE`/`LEARNING` terakhir dari konteks/progress log, jalankan spaced review |
 | `kasih latihan N3` | Tanyakan singkat grammar/topik mana yang mau difokuskan (kecuali sudah ada progress log yang menunjukkan prioritas jelas), lalu mulai |
+
+## 7. Contoh Ringkasan Menyeluruh (versi singkat, satu panel kode)
+
+```text
+==================================================
+RINGKASAN POLA: ～ように      Level: N4/N3
+==================================================
+1. DEFINISI
+   ～ように = "supaya hasilnya jadi begini". Kamu menyiapkan sesuatu, hasilnya diharapkan terjadi.
+
+2. FUNGSI
+   - Menyatakan tujuan yang hasilnya tidak kamu kendalikan langsung (bisa, tidak lupa, jadi sembuh)
+   - Situasi: pasang alarm, tulis catatan, latihan rutin
+
+3. CARA PAKAI
+   kata kerja kamus + ように : 話す → 話すように
+   kata kerja ない + ように  : 忘れない → 忘れないように
+   kata kerja bisa + ように  : 話せる → 話せるように
+
+4. ANALOGI
+   Pasang alarm lalu berharap bangun tepat waktu.
+   Bangunnya "jadi", bukan tombol yang kamu tekan.
+
+5. TIPS MENEMPEL DI OTAK
+   Yō-ni = "Yo, nih… semoga ya!"
+   Cek diri: "Ini hasil yang kuharapkan atau aksi yang kupegang sendiri?"
+
+6. BEDA DENGAN ために
+   ように | semoga jadi begini, hasil tidak langsung dikendalikan | 話せるように
+   ために | aku pegang setir, tujuan kupilih sendiri               | お金を貯めるために
+
+7. JEBAKAN UMUM
+   Salah: 話せるために  Benar: 話せるように  (kata kerja bisa → ように)
+
+8. CONTOH KALIMAT
+   忘（わす）れないように、メモを書（か）いておきます。 / Supaya tidak lupa, saya tulis catatan. / hasil yang diharapkan
+
+9. RINGKASAN INTI
+   - ように = semoga jadi begini
+   - ために = aku yang pegang setir
+   - kata kerja bisa / ない → ように
+
+10. KOTOBA & KANJI YANG DIUJIKAN
+    Kanji/Kotoba | Furigana | Arti Indonesia
+    忘れる | わすれる | lupa
+    書く | かく | menulis
+    練習 | れんしゅう | latihan
+    元気 | げんき | sehat, bugar
+
+11. CATATAN PRIBADI
+    Status: LEARNING | Kelemahan: tertukar dengan ために (2x) | Analogi klik: alarm
+==================================================
+```
+
+## 8. Contoh header soal JLPT bunpou (tag level C1–C4)
+
+```
+Soal 1 · Mengisi rumpang · Level: C1 (Mengingat)
+Soal 4 · Menyusun kalimat (★) · Level: C3 (Menerapkan)
+Soal 7 (Wacana, sub-soal 2) · Pemahaman pola dalam konteks · Level: C2 (Memahami)
+```
